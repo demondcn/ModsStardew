@@ -1,0 +1,50 @@
+{
+    "Changes": [
+	
+//	MAIN MAP FUNCTIONS
+
+		{
+            "Action": "EditData",
+            "Target": "Strings/UI",
+            "Entries": { "ATK_WaFFLE_Description": "Waterfall Forest LE_Eine große Karte, die dir die Wohltaten eines Waldes bietet und von Wasserfällen umgeben ist!" },
+			"When": { "Language": "de" }
+        },
+//
+		{
+            "Action": "EditData",
+            "Target": "Strings/UI",
+            "Entries": { "ATK_WaFFLE_Description": "Waterfall Forest LE_Une ferme de grande taille, offrant les bénéfices d'une forêt et entourée de chutes d'eau!" },
+			"When": { "Language": "fr" }
+        },
+
+//	SECRET WOODS SHORTCUT
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/WaFFLE_EX_Options.tmx",
+			"FromArea": { "X": 4, "Y": 48, "Width": 1, "Height": 2 },
+			"ToArea": { "X": 4, "Y": 2, "Width": 1, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Language": "de",
+				"Secret_Woods_Shortcut_WaFFLE": "True",
+				"HasFlag |contains=beenToWoods": "false"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/WaFFLE_EX_Options.tmx",
+			"FromArea": { "X": 8, "Y": 48, "Width": 1, "Height": 2 },
+			"ToArea": { "X": 4, "Y": 2, "Width": 1, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Language": "fr",
+				"Secret_Woods_Shortcut_WaFFLE": "True",
+				"HasFlag |contains=beenToWoods": "false"
+			}
+		}
+	]
+}	  

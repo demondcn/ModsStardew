@@ -1,0 +1,95 @@
+{
+  "WeatherForYesterday": "Kana.WeatherWonders_DryLightning",
+  "LNOSCounter": {},
+  "ExistingObjectLocations": {},
+  "SavedObjects": [
+    {
+      "MapName": "Forest",
+      "Name": null,
+      "Tile": "79, 38",
+      "Type": "ResourceClump",
+      "ID": "600",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 630,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Forest",
+      "Name": null,
+      "Tile": "102, 89",
+      "Type": "ResourceClump",
+      "ID": "600",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 720,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Forest",
+      "Name": null,
+      "Tile": "69, 10",
+      "Type": "ResourceClump",
+      "ID": "600",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 850,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Forest",
+      "Name": null,
+      "Tile": "23, 37",
+      "Type": "ResourceClump",
+      "ID": "600",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 1140,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Forest",
+      "Name": null,
+      "Tile": "24, 85",
+      "Type": "ResourceClump",
+      "ID": "600",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 1210,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Forest",
+      "Name": null,
+      "Tile": "68, 64",
+      "Type": "ResourceClump",
+      "ID": "600",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 1350,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Forest",
+      "Name": null,
+      "Tile": "33, 49",
+      "Type": "ResourceClump",
+      "ID": "600",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 1000,
+      "ConfigItem": null,
+      "MonType": null
+    },
+    {
+      "MapName": "Forest",
+      "Name": null,
+      "Tile": "58, 16",
+      "Type": "ResourceClump",
+      "ID": "600",
+      "DaysUntilExpire": 0,
+      "SpawnTime": 1430,
+      "ConfigItem": null,
+      "MonType": null
+    }
+  ]
+}

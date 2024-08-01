@@ -1,0 +1,23 @@
+{
+  "Use_Waterfall_Cave_WaFF": "true",
+  "Cellar_Allows_Casks_in_Cave_WaFF": "false",
+  "Smaller_Shortcut_Caves_WaFF": "false",
+  "Secret_Woods_Shortcut_WaFF": "true",
+  "Use_Animal_Pen_WaFF": "false",
+  "Animal_Pen_Size_WaFF": "2_Med",
+  "Use_Invisible_Barriers_WaFF": "true",
+  "Beach_Type_WaFF": "Sea",
+  "Beach_Bridge_WaFF": "Sand",
+  "Turn_Pond_into_Spa_WaFF": "true",
+  "No_Water_Spa_WaFF": "false",
+  "Fountain_Decoration_WaFF": "true",
+  "TF_Dirt_Color_WaFF": "Automatic",
+  "Add_Cliffs_N_WaFF": "true",
+  "Add_Cliffs_E_WaFF": "true",
+  "Add_Small_Ridges_N_WaFF": "false",
+  "Add_Small_Ridges_E_WaFF": "false",
+  "Dense_Forest_Area_WaFF": "false",
+  "Fences_WaFF": "Standard",
+  "Small_Stairs_Hills_WaFF": "false",
+  "Old_Main_Bridge_WaFF": "false"
+}

@@ -1,0 +1,10 @@
+{
+  "Name": "Stardew Valley Expanded - Spanish",
+  "Author": "mardrest",
+  "Version": "2.2.42",
+  "Description": "Traducci�n al espa�ol del mod Stardew Valley Expanded",
+  "UniqueID": "mardrest.SVE_Spanish",
+  "EntryDll": "SVE_Spanish.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [ "Nexus:5272" ]
+}

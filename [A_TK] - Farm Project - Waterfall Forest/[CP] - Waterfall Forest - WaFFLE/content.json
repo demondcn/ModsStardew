@@ -1,0 +1,918 @@
+{
+    "Format": "2.0.0",
+	
+//	CONFIG
+
+    "ConfigSchema": {
+		"Use_Waterfall_Cave_WaFFLE": {
+			"AllowValues": "False, True",
+			"Default": "True",
+			"Description": "Make the Waterfall Cave accessible on your farm (by default, this will be in addition to the normal cave). Disabling this option will remove all of the cave extra entrances from the map.",
+			"Section": "Cave_Shortcuts_WaFFLE"			
+		},
+		"Cellar_Allows_Casks_in_Cave_WaFFLE": {
+			"AllowValues": "False, True",
+			"Default": "False",
+			"Description": "Once the farmhouse cellar is built, extend the usage of casks to the Waterfall Cave.",
+			"Section": "Cave_Shortcuts_WaFFLE"
+        },
+		"Smaller_Shortcut_Caves_WaFFLE": {
+			"AllowValues": "False, True",
+			"Default": "False",
+			"Description": "Make the shortcuts' entrances smaller on the farm. Beware that regular horses will no longer be able to use them!",
+			"Section": "Cave_Shortcuts_WaFFLE"
+		},
+		"Secret_Woods_Shortcut_WaFFLE": {
+			"AllowValues": "False, True",
+			"Default": "True",
+			"Description": "Unlock a path next to the farm's shrine that will quickly lead to the Secret Woods if the player has already been there at least once.",
+			"Section": "Cave_Shortcuts_WaFFLE"
+        },
+//		
+		"Use_Animal_Pen_WaFFLE": {
+			"AllowValues": "False, True",
+			"Default": "False",
+			"Description": "Place one or more animal pens on the western side of the farm.",
+			"Section": "Animals_Monsters_WaFFLE"
+		},	
+		"Animal_Pen_Size_WaFFLE": {
+			"AllowValues": "2_Med, 1_Med, 1_Large",
+			"Default": "2_Med",
+			"Description": "Select the amount and size of the animal pens.",
+			"Section": "Animals_Monsters_WaFFLE"
+		},		
+		"Use_Invisible_Barriers_WaFFLE": {
+			"AllowValues": "False, True",
+			"Default": "True",
+			"Description": "Prevent animals from using stairs, bridges or leaving the pen. Disable to let them roam the farm freely.",
+			"Section": "Animals_Monsters_WaFFLE"
+		},
+//
+		"Beach_Type_WaFFLE": {
+			"AllowValues": "Sea, Lake, Dry, Dry_Pond",
+			"Default": "Sea",
+			"Description": "Choose between a dry beach full of sand with very few water, a grassy beach with a large lake or a saltwater one with sea forage and palm trees.",
+			"Section": "Water_Features_WaFFLE"
+		},
+		"Beach_Bridge_WaFFLE": {
+			"AllowValues": "Sand, Planks",
+			"Default": "Sand",
+			"Description": "Turn the small bridges on the beach into either wooden planks or natural sand. Beware that the sand option will prevent you from laying path tiles over it, which may hinder mods relying on said tiles to work (like Automate).",
+			"Section": "Water_Features_WaFFLE"
+		},		
+		"Turn_Pond_into_Spa_WaFFLE": {
+			"AllowValues": "False, True",
+			"Default": "True",
+			"Description": "Turn the small pond south of the twin waterfalls into a healing pond.",
+			"Section": "Water_Features_WaFFLE"
+		},
+		"No_Water_Spa_WaFFLE": {
+			"AllowValues": "False, True",
+			"Default": "False",
+			"Description": "Remove water effects and properties from the healing pond (usefull for some mod compatibility issues, note that this is automatically actived when using the Swim mod).",
+			"Section": "Water_Features_WaFFLE"
+		},
+		"Fountain_Decoration_WaFFLE": {
+			"AllowValues": "False, True",
+			"Default": "True",
+			"Description": "Add a fountain and its decorated surroundings to the farm.",
+			"Section": "Water_Features_WaFFLE"
+		},
+//
+		"TF_Dirt_Color_WaFFLE": {
+			"AllowValues": "Automatic, Dark, Light",
+			"Default": "Automatic",
+			"Description": "Select the color of the dirt around the twin waterfalls area. The automatic option will leave the dirt dark and only change it in case of compatibility issues (like mods trying to use said dirt as quarry tiles).",
+			"Section": "Natural_Terrain_Features_WaFFLE"
+		},
+		"Add_Cliffs_N_WaFFLE": {
+			"AllowValues": "False, True",
+			"Default": "True",
+			"Description": "Add a cliff on the farmhouse main island.",
+			"Section": "Natural_Terrain_Features_WaFFLE"
+		},
+		"Add_Cliffs_E_WaFFLE": {
+			"AllowValues": "False, True",
+			"Default": "True",
+			"Description": "Add some cliffs to the south-eastern part of the map.",
+			"Section": "Natural_Terrain_Features_WaFFLE"
+		},
+		"Add_Small_Ridges_N_WaFFLE": {
+			"AllowValues": "False, True",
+			"Default": "False",
+			"Description": "Add a small ridge south of the farmhouse.",
+			"Section": "Natural_Terrain_Features_WaFFLE"
+		},
+		"Add_Small_Ridges_E_WaFFLE": {
+			"AllowValues": "False, True",
+			"Default": "False",
+			"Description": "Add a small ridge near the south-eastern bridge.",
+			"Section": "Natural_Terrain_Features_WaFFLE"
+		},
+		"Dense_Forest_Area_WaFFLE": {
+			"AllowValues": "False, True",
+			"Default": "False",
+			"Description": "Add trees and a dense foliage above the tree stumps West and East of the farm.",
+			"Section": "Natural_Terrain_Features_WaFFLE"
+		},
+//
+		"Fences_WaFFLE": {
+			"AllowValues": "Standard, Less, More, Even_More",
+			"Default": "Standard",
+			"Description": "Handle the amount of decorative fences that will be present on the farm.",
+			"Section": "Artificial_Terrain_Features_WaFFLE"
+		},	
+		"Small_Stairs_Hills_WaFFLE": {
+			"AllowValues": "False, True",
+			"Default": "False",
+			"Description": "Reverse the two small hills' large stairs in the center of the map into their original smaller size.  Beware that regular horses will no longer be able to use them!",
+			"Section": "Artificial_Terrain_Features_WaFFLE"
+		},
+		"Old_Main_Bridge_WaFFLE": {
+			"AllowValues": "False, True",
+			"Default": "False",
+			"Description": "Replace the bridge beween the farmhouse and the path to the bus stop by the bigger one used in previous versions of the mod.",
+			"Section": "Artificial_Terrain_Features_WaFFLE"
+		},
+		"Use_Wooden_Bridges_WaFFLE": {
+			"AllowValues": "False, True",
+			"Default": "True",
+			"Description": "Revert the eastern stone bridges to their previous wooden form used in previous versions of the mod.",
+			"Section": "Artificial_Terrain_Features_WaFFLE"
+		}
+    },
+	
+    "Changes": [
+	
+//	MAIN MAP FUNCTIONS
+
+        {
+            "Action": "EditData",
+            "Target": "Data/AdditionalFarms",
+            "Entries": {
+				"A_TK.FarmProjectForaging/WaFFLE": {
+					"ID": "A_TK.FarmProjectForaging/WaFFLE",
+					"TooltipStringPath": "Strings/UI:ATK_WaFFLE_Description",
+					"MapName": "WaFFLE_Farm",
+					"IconTexture": "Mods/A_TK.FarmProjectForaging/IconLE",
+					"WorldMapTexture": "Mods/A_TK.FarmProjectForaging/WorldMapLE"
+				}
+			},
+		},
+		{
+            "Action": "EditData",
+            "Target": "Strings/UI",
+            "Entries": { "ATK_WaFFLE_Description": "Waterfall Forest LE_A large size map, offering you the boons of a forest and circled by waterfalls!" }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/WaFFLE_Farm",
+            "FromFile": "assets/WaFFLE_Farm.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Mods/A_TK.FarmProjectForaging/IconLE",
+            "FromFile": "assets/WaFFLE_Icon.png"
+        },
+		
+//	MAP PROPERTIES
+
+        {
+            "Action": "EditMap",
+            "Target": "Maps/WaFFLE_Farm",
+			"MapProperties": { "AllowGrassSurviveInWinter": "T" }
+        },
+//
+        {
+            "Action": "EditMap",
+            "Target": "Maps/WaFFLE_Farm",
+			"MapProperties": { "BusStopEntry": "92 2" }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/WaFFLE_Farm",
+			"MapProperties": { "ForestEntry": "14 109" }
+        },
+//
+        {
+            "Action": "EditMap",
+            "Target": "Maps/WaFFLE_Farm",
+			"MapProperties": { "GreenhouseLocation": "25 10" }
+        },
+//
+        {
+            "Action": "EditMap",
+            "Target": "Maps/WaFFLE_Farm",
+			"MapProperties": { "Light": "83 3 4 35 5 4 158 89 4" }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/WaFFLE_Farm",
+			"MapProperties": { "NightTiles": "Buildings 35 5 507" }
+        },
+//
+        {
+            "Action": "EditMap",
+            "Target": "Maps/WaFFLE_Farm",
+			"MapProperties": { "Outdoors": "T" }
+        },
+//
+        {
+            "Action": "EditMap",
+            "Target": "Maps/WaFFLE_Farm",
+			"MapProperties": { "SpawnForestFarmForage": "T" }
+        },		
+        {
+            "Action": "EditMap",
+            "Target": "Maps/WaFFLE_Farm",
+			"MapProperties": { "SpawnMountainFarmOreRect": "136 86 21 12" }
+        },
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"AddWarps": [
+				"94 1 BusStop 11 24",
+				"94 2 BusStop 11 24",
+				"13 110 Forest 68 0",
+				"14 110 Forest 68 0"
+			]
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"MapProperties": {"SpawnBeachFarmForage": "T"}
+		},
+		
+//	MAP DATA
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Entries": {
+				"Farm_A_TK.FarmProjectForaging/WaFFLE": {
+					"DisplayName": "Waterfall Forest",
+					"DefaultArrivalTile": {
+						"X": 91,
+						"Y": 3
+					},
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": null,
+					"FormerLocationNames": [],
+					"CanPlantHere": true,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+						{
+							"Chance": 0.5,
+							"ApplyGenerousEnchantment": true,
+							"OneDebrisPerDrop": true,
+							"Precedence": 0,
+							"ContinueOnDrop": false,
+							"Condition": null,
+							"Id": "(O)382",
+							"ItemId": "(O)382",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": 1,
+							"MaxStack": 3,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.1,
+							"ApplyGenerousEnchantment": true,
+							"OneDebrisPerDrop": true,
+							"Precedence": 0,
+							"ContinueOnDrop": false,
+							"Condition": null,
+							"Id": "(O)770",
+							"ItemId": "(O)770",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": 1,
+							"MaxStack": 3,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.25,
+							"ApplyGenerousEnchantment": true,
+							"OneDebrisPerDrop": true,
+							"Precedence": 0,
+							"ContinueOnDrop": false,
+							"Condition": null,
+							"Id": "(O)390",
+							"ItemId": "(O)390",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": 1,
+							"MaxStack": 3,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						}
+					],
+					"FishAreas": {
+						"WaFFLE_Forest": {
+							"DisplayName": null,
+							"Position": {
+								"X": 0,
+								"Y": 0,
+								"Width": 160,
+								"Height": 84
+							},
+						"CrabPotFishTypes": [],
+						"CrabPotJunkChance": 0.2
+						},
+						"WaFFLE_Beach": {
+							"DisplayName": null,
+							"Position": {
+								"X": 0,
+								"Y": 85,
+								"Width": 160,
+								"Height": 26
+							},
+							"CrabPotFishTypes": [ "ocean" ],
+							"CrabPotJunkChance": 0.2
+						}	
+					},
+					"Fish": [
+						{
+							"Chance": 0.05,
+							"Season": null,
+							"FishAreaId": "WaFFLE_Forest",
+							"BobberPosition": null,
+							"PlayerPosition": null,
+							"MinFishingLevel": 0,
+							"MinDistanceFromShore": 0,
+							"MaxDistanceFromShore": -1,
+							"ApplyDailyLuck": true,
+							"CuriosityLureBuff": -1.0,
+							"CatchLimit": -1,
+							"IsBossFish": false,
+							"SetFlagOnCatch": null,
+							"RequireMagicBait": false,
+							"Precedence": -10,
+							"IgnoreFishDataRequirements": false,
+							"CanBeInherited": true,
+							"ChanceModifiers": null,
+							"ChanceModifierMode": "Stack",
+							"ChanceBoostPerLuckLevel": 0.0,
+							"UseFishCaughtSeededRandom": false,
+							"Condition": null,
+							"Id": "(O)734",
+							"ItemId": "(O)734",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.45,
+							"Season": null,
+							"FishAreaId": "WaFFLE_Forest",
+							"BobberPosition": null,
+							"PlayerPosition": null,
+							"MinFishingLevel": 0,
+							"MinDistanceFromShore": 0,
+							"MaxDistanceFromShore": -1,
+							"ApplyDailyLuck": false,
+							"CuriosityLureBuff": -1.0,
+							"CatchLimit": -1,
+							"IsBossFish": false,
+							"SetFlagOnCatch": null,
+							"RequireMagicBait": false,
+							"Precedence": 0,
+							"IgnoreFishDataRequirements": true,
+							"CanBeInherited": true,
+							"ChanceModifiers": null,
+							"ChanceModifierMode": "Stack",
+							"ChanceBoostPerLuckLevel": 0.0,
+							"UseFishCaughtSeededRandom": false,
+							"Condition": null,
+							"Id": "LOCATION_FISH Forest BOBBER_X BOBBER_Y WATER_DEPTH",
+							"ItemId": "LOCATION_FISH Forest BOBBER_X BOBBER_Y WATER_DEPTH",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 1.0,
+							"Season": null,
+							"FishAreaId": "WaFFLE_Forest",
+							"BobberPosition": null,
+							"PlayerPosition": null,
+							"MinFishingLevel": 0,
+							"MinDistanceFromShore": 0,
+							"MaxDistanceFromShore": -1,
+							"ApplyDailyLuck": false,
+							"CuriosityLureBuff": -1.0,
+							"CatchLimit": -1,
+							"IsBossFish": false,
+							"SetFlagOnCatch": null,
+							"RequireMagicBait": false,
+							"Precedence": 0,
+							"IgnoreFishDataRequirements": true,
+							"CanBeInherited": true,
+							"ChanceModifiers": null,
+							"ChanceModifierMode": "Stack",
+							"ChanceBoostPerLuckLevel": 0.0,
+							"UseFishCaughtSeededRandom": false,
+							"Condition": null,
+							"Id": "LOCATION_FISH Town BOBBER_X BOBBER_Y WATER_DEPTH",
+							"ItemId": "LOCATION_FISH Town BOBBER_X BOBBER_Y WATER_DEPTH",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.15,
+							"Season": null,
+							"FishAreaId": "WaFFLE_Beach",
+							"BobberPosition": null,
+							"PlayerPosition": null,
+							"MinFishingLevel": 0,
+							"MinDistanceFromShore": 0,
+							"MaxDistanceFromShore": -1,
+							"ApplyDailyLuck": false,
+							"CuriosityLureBuff": -1.0,
+							"CatchLimit": -1,
+							"IsBossFish": false,
+							"SetFlagOnCatch": null,
+							"RequireMagicBait": false,
+							"Precedence": -20,
+							"IgnoreFishDataRequirements": false,
+							"CanBeInherited": true,
+							"ChanceModifiers": null,
+							"ChanceModifierMode": "Stack",
+							"ChanceBoostPerLuckLevel": 0.0,
+							"UseFishCaughtSeededRandom": false,
+							"Condition": null,
+							"Id": "(O)152",
+							"ItemId": "(O)152",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.06,
+							"Season": null,
+							"FishAreaId": "WaFFLE_Beach",
+							"BobberPosition": null,
+							"PlayerPosition": null,
+							"MinFishingLevel": 0,
+							"MinDistanceFromShore": 0,
+							"MaxDistanceFromShore": -1,
+							"ApplyDailyLuck": false,
+							"CuriosityLureBuff": -1.0,
+							"CatchLimit": -1,
+							"IsBossFish": false,
+							"SetFlagOnCatch": null,
+							"RequireMagicBait": false,
+							"Precedence": -10,
+							"IgnoreFishDataRequirements": false,
+							"CanBeInherited": true,
+							"ChanceModifiers": null,
+							"ChanceModifierMode": "Stack",
+							"ChanceBoostPerLuckLevel": 0.0,
+							"UseFishCaughtSeededRandom": false,
+							"Condition": null,
+							"Id": "(O)723|(O)393|(O)719|(O)718",
+							"ItemId": null,
+							"RandomItemId": [
+							  "(O)723",
+							  "(O)393",
+							  "(O)719",
+							  "(O)718"
+							],
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.66,
+							"Season": null,
+							"FishAreaId": "WaFFLE_Beach",
+							"BobberPosition": null,
+							"PlayerPosition": null,
+							"MinFishingLevel": 0,
+							"MinDistanceFromShore": 0,
+							"MaxDistanceFromShore": -1,
+							"ApplyDailyLuck": false,
+							"CuriosityLureBuff": -1.0,
+							"CatchLimit": -1,
+							"IsBossFish": false,
+							"SetFlagOnCatch": null,
+							"RequireMagicBait": false,
+							"Precedence": 0,
+							"IgnoreFishDataRequirements": true,
+							"CanBeInherited": true,
+							"ChanceModifiers": null,
+							"ChanceModifierMode": "Stack",
+							"ChanceBoostPerLuckLevel": 0.0,
+							"UseFishCaughtSeededRandom": false,
+							"Condition": null,
+							"Id": "LOCATION_FISH Beach BOBBER_X BOBBER_Y WATER_DEPTH",
+							"ItemId": "LOCATION_FISH Beach BOBBER_X BOBBER_Y WATER_DEPTH",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						}
+					],
+					"Forage": [
+						{
+							"Chance": 0.8,
+							"Season": "Spring",
+							"Condition": null,
+							"Id": "(O)20|(O)22",
+							"ItemId": null,
+							"RandomItemId": [
+								"(O)20",
+								"(O)22"
+							],
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.5,
+							"Season": "Spring",
+							"Condition": null,
+							"Id": "(O)16|(O)257",
+							"ItemId": null,
+							"RandomItemId": [
+								"(O)16",
+								"(O)257"
+							],
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.8,
+							"Season": "Summer",
+							"Condition": null,
+							"Id": "(O)396|(O)404",
+							"ItemId": null,
+							"RandomItemId": [
+								"(O)396",
+								"(O)404"
+							],
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.8,
+							"Season": "Summer",
+							"Condition": null,
+							"Id": "(O)398|(O)402",
+							"ItemId": null,
+							"RandomItemId": [
+								"(O)398",
+								"(O)402"
+							],
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.6,
+							"Season": "Fall",
+							"Condition": null,
+							"Id": "(O)404|(O)408",
+							"ItemId": null,
+							"RandomItemId": [
+								"(O)404",
+								"(O)408"
+							],
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.5,
+							"Season": "Fall",
+							"Condition": null,
+							"Id": "(O)406|(O)420",
+							"ItemId": null,
+							"RandomItemId": [
+								"(O)406",
+								"(O)420"
+							],
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.15,
+							"Season": "Fall",
+							"Condition": null,
+							"Id": "(O)281|(O)422",
+							"ItemId": null,
+							"RandomItemId": [
+								"(O)281",
+								"(O)422"
+							],
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.25,
+							"Season": "Winter",
+							"Condition": null,
+							"Id": "(O)414",
+							"ItemId": "(O)414",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.8,
+							"Season": "Winter",
+							"Condition": null,
+							"Id": "(O)283|(O)418",
+							"ItemId": null,
+							"RandomItemId": [
+								"(O)283",
+								"(O)418"
+							],
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						}
+					],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 11,
+					"FirstDayWeedMultiplier": 15,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 4,
+					"MaxSpawnedForageAtOnce": 10,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+				}
+			}
+		},
+
+//	FARMHOUSE	
+
+        {
+            "Action": "EditMap",
+            "Target": "Maps/WaFFLE_Farm",
+			"MapProperties": { "FarmHouseFurniture": "1466 1 4 0 1602 2 1 0 1616 4 1 0 1616 7 1 0 0 4 4 0 1134 5 4 0 1748 5 4 0 1792 8 4 0 1376 10 4 0 1377 1 10 0 1618 6 8 0" }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/WaFFLE_Farm",
+			"MapProperties": { "FarmHouseWallpaper": "11" }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/WaFFLE_Farm",
+			"MapProperties": { "FarmHouseFlooring": "41" }
+        },
+
+//	OPTIONS FILES
+
+		{
+			"Action": "Include",
+			"FromFile": "options/01_WaFFLE_land.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "options/02_WaFFLE_aqua.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "options/03_WaFFLE_trees_woodwork.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "options/04_WaFFLE_barriers_shortcuts.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "options/cave/WaFFLE_cave.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "synergies/WaFFLE_comp_misc.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "synergies/WaFFLE_fix_misc.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "synergies/WaFFLE_trans_maps.json"
+		}
+    ]
+}
